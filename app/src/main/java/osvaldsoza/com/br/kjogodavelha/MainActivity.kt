@@ -87,9 +87,11 @@ class MainActivity : AppCompatActivity() {
             winner = 2
         }
 
+        val msg = "Parabéns! Jogador " + winner + " venceu"
+
         when (winner) {
-            1 -> Toast.makeText(this, "Parabéns! Jogador " + winner + " venceu", Toast.LENGTH_SHORT).show()
-            2 -> Toast.makeText(this, "Parabéns! Jogador " + winner + " venceu", Toast.LENGTH_SHORT).show()
+            1 -> Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+            2 -> Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
         }
     }
 
